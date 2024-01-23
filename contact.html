@@ -73,7 +73,7 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
+    <!-- <section class="inner-page">
     <section id="contact" class="contact section-bg">
       <div class="container">
 
@@ -110,7 +110,7 @@
 
           </div>
 
-        </div>
+        </div> -->
 
         <!-- <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
@@ -140,39 +140,55 @@
 
         </div> -->
 
-        <br>
         <center>
-        <div class="wrapper">
-          <header>Send us a Message</header>
-          <form action="#">
-            <div class="dbl-field">
-              <div class="field">
-                <input type="text" name="name" placeholder="Enter your name">
-                <i class="bi bi-person"></i>
+        <div class="containers">
+          <div class="contents">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">Surkhet, NP12</div>
+                <div class="text-two">Birendranagar 06</div>
               </div>
-              <div class="field">
-                <input type="text" name="email" placeholder="Enter your email">
-                <i class="bi bi-envelope"></i>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+0098 9893 5647</div>
+                <div class="text-two">+0096 3434 5678</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">codinglab@gmail.com</div>
+                <div class="text-two">info.codinglab@gmail.com</div>
               </div>
             </div>
-            <div class="message">
-              <textarea placeholder="Write your message" name="message"></textarea>
-              <i class="bi bi-chat-left-text"></i>
-            </div>
-            <div class="button-area">
-              <button type="submit">Send Message</button>
-              <span></span>
-            </div>
-          </form>
+            <div class="right-side">
+              <div class="topic-text">Send us a message</div>
+              <p>If you require any further information, please feel free to reach out to me.</p>
+            <form action="message.php">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" id="name">
+              </div>
+              <div class="input-box">
+                <input type="email" placeholder="Enter your email" id="email">
+              </div>
+              <div class="input-box message-box">
+                <input type="text" placeholder="Enter your message" id="message">
+              </div>
+              <div class="button">
+                <input type="button" value="Send Now" >
+              </div>
+            </form>
+          </div>
+          </div>
         </div>
-      
-        <script src="script.js"></script>
-        </center>
+        <br>
 
-      </div>
+      <!-- </div>
     </section>
       </div>
-    </section>
+    </section> -->
 
   </main><!-- End #main -->
 
