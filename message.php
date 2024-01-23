@@ -7,7 +7,7 @@
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
       $receiver = "chuahyongxie@gmail.com"; //enter that email address where you want to receive all messages
       $subject = "From: $name <$email>";
-      $body = "Name: $name\nEmail: $email\nPhone: $message\n\nRegards,\n$name";
+      $body = "Name: $name\nEmail: $email\nPhone: \n\n$message\n\nRegards,\n$name";
       $sender = "From: $email";
       if(mail($receiver, $subject, $body, $sender)){
          echo "Your message has been sent";
@@ -20,4 +20,3 @@
   }else{
     echo "Email and message field is required!";
   }
-?>
