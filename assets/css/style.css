@@ -1183,7 +1183,9 @@ form .button-area{
   font-weight: 500;
 }
 .contents .left-side .details .text-one,
-.contents .left-side .details .text-two{
+.contents .left-side .details .text-two,
+.contents .left-side .details .text-three,
+.contents .left-side .details .text-four{
   font-size: 14px;
   color: #afafb6;
 }
