@@ -41,6 +41,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="index.html #services">Services</a></li>
           <li><a href="about.html">About Us</a></li>
           <li class="dropdown"><a href="project.html"><span>Project</span><i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -86,7 +87,7 @@
           <div class="col-lg-10">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="form-group mt-3">
+                <div class="form-group mt-3" style="color: #85bb65;">
                   <h2 style="text-align: center;">JOB APPLICATION</h2>
                   <p style="text-align: center;">Please fill out the following fields to submit your application.</p>
                 </div>
@@ -94,9 +95,12 @@
                   <p>Job Position :</p> 
                   <select class="form-control" id="job-pos" name="job-pos" required>
                     <option disabled selected>Select Your Position</option>
-                    <option>Manager</option>
+                    <option>Project Manager</option>
                     <option>General Worker</option>
-                    <option>Supervisor</option>
+                    <option>Site Supervisor</option>
+                    <option>Admin Assistant</option>
+                    <option>Account Executive</option>
+                    <option>Site Engineer</option>
                   </select>
                 </div>
                 <div class="form-group mt-3">
@@ -116,6 +120,23 @@
                 <p>Why do you want to apply ?</p>
                 <textarea class="form-control" name="message" rows="5" placeholder="Tell us more about your motivations" required></textarea>
               </div>
+              <div class="form-group mt-3">
+                <p>Qualification :</p> 
+                <select class="form-control" id="qualification" name="qualification" required>
+                  <option disabled selected>Select Your Qualification</option>
+                  <option>Degree</option>
+                  <option>Diploma</option>
+                  <option>SKM (Sijil Kemahiran)</option>
+                  <option>SPM (Sijil Pelajaran Malaysia)</option>
+                  <option>None of the above</option>
+                </select>
+              </div>
+              <br>
+              <div>
+                <p>Experience :</p>
+                <textarea class="form-control" name="experience" placeholder="Tell us about your experience" required></textarea>
+              </div>
+              <br>
               <div>
                 <p>Upload Your Resume :</p>
                 <input name="userfile" type="file" accept="application/pdf" id="fileattch"/>
