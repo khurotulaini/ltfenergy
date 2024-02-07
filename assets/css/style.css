@@ -349,7 +349,7 @@ h6 {
 #hero {
   width: 100%;
   height: 60vh;
-  background: url("../img/pic2.jpg") center center;
+  background: url("../img/img.png") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -358,7 +358,6 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(56, 64, 70, 0.7);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -447,6 +446,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #89C35C;
 }
 
 .section-title h2::before {
@@ -507,6 +507,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+  color: #89C35C;
 }
 
 .what-we-do .icon-box h4 a {
@@ -643,9 +644,9 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  background: #89C35C;
+  background: #eaf4fb;
   padding: 12px;
-  color: #121212;
+  color: #89C35C;
   border-radius: 50px;
   display: inline-flex;
   align-items: center;
@@ -658,7 +659,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #759167;
+  color: #89C35C;
 }
 
 .counts .count-box p {
