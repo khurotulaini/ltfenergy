@@ -866,6 +866,17 @@ section {
   text-transform: uppercase;
 }
 
+.portfolio #button {
+  padding: 10px 50px;
+  border-radius: 50px;
+  border: 1px ;
+  background-color: #121212;
+}
+
+.portfolio #button:hover {
+  background-color: #1d1d1d;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
