@@ -1,13 +1,5 @@
 <?php
 
-$phpmailer = new PHPMailer();
-$phpmailer->isSMTP();
-$phpmailer->Host = 'sandbox.smtp.mailtrap.io';
-$phpmailer->SMTPAuth = true;
-$phpmailer->Port = 2525;
-$phpmailer->Username = 'c86206bb7d48bc';
-$phpmailer->Password = '0222a23f95f47c';
-
 // Retrieve form data
 $jobPos = $_POST['job-pos'];
 $name = $_POST['name'];
@@ -23,7 +15,7 @@ $fileError = $file['error'];
 $fileSize = $file['size'];
 
 // Email configuration
-// $toEmail = "chuahyongxie@gmail.com";  // Replace with your recipient email
+$toEmail = "chuahyongxie@gmail.com";  // Replace with your recipient email
 $subject = "New Job Application: " . $jobPos;
 
 // Compose email content
@@ -65,7 +57,7 @@ $headers = "From: $email\r\n" .
            "MIME-Version: 1.0\r\n" .
            "Content-Type: multipart/mixed; boundary=\"PHP-mixed-\"\r\n";
 
-if (mail($phpmailer, $subject, $body, $headers)) {
+if (mail($toEmail, $subject, $body, $headers)) {
     // Success message
     echo "Application submitted successfully!";
 } else {
