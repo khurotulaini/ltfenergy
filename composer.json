@@ -1,7 +1,5 @@
 {
     "require": {
-        "php": "^8.0.2",
-        "phpmailer/phpmailer": "^6.9.1",
-        "decomplexity/SendOauth2": ">=3.0"
+        "phpmailer/phpmailer": "^6.9"
     }
 }
