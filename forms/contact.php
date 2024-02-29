@@ -38,7 +38,7 @@ try {
     //Attachments
     $mail->addAttachment($fileattch);         //Add attachments
 
-    $mail->send();
+    $mail->send($submit);
     echo 'Application has been submitted successfully';
 } catch (Exception $e) {
     echo "An error occurred while sending the email: {$mail->ErrorInfo}";
