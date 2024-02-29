@@ -31,6 +31,8 @@ try {
     $mail->Body    = 'Email: $email\n';
     $mail->Body    = 'Phone Number: $phone\n';
     $mail->Body    = 'Message:\n$message\n';
+    $mail->Body    = 'Qualification:\n$qualification\n';
+    $mail->Body    = 'Experience:\n$experience\n';
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     //Attachments
