@@ -85,7 +85,7 @@
 
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
-            <form action="contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://formsubmit.co/aini9900933850@gmail.com" method="POST">
               <div class="row">
                 <div class="form-group mt-3">
                   <h2 style="text-align: center; color:#85bb65;">JOB APPLICATION</h2>
@@ -142,7 +142,13 @@
                 <input name="fileattch" type="file" accept="application/pdf" id="fileattch"/>
                 <p style="font-size: 12px; color: red;">Format Pdf file only.</p>
               </div>
-              <div class="text-center"><button type="submit" id="submit" name="submit">Submit application</button></div>
+              <div class="text-center">
+                <input type="hidden" name="_next" value="https://khurotulaini.github.io/ltfenergy/career.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="A New Job Application !">
+                <input type="hidden" name="_template" value="table">
+                <button type="submit" id="submit" name="submit">Submit application</button>
+              </div>
             </form>
           </div>
 
