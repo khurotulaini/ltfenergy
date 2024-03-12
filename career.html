@@ -83,76 +83,139 @@
     <section id="contact" class="contact section-bg">
       <div class="container">
 
-        <div class="row mt-5 justify-content-center">
-          <div class="col-lg-10">
-            <div class="row php-email-form">
-              <div class="form-group mt-3">
-                <h2 style="text-align: center; color:#85bb65;">JOB APPLICATION</h2>
-                <p style="text-align: center;">Please fill out the following fields to submit your application.</p>
-              </div>
-              <form action="https://formsubmit.co/aini9900933850@gmail.com" method="POST" enctype="multipart/form-data">
-                <div class="form-group mt-3">
-                  <div class="form-row">
-                    <div class="form-group mt-3">
-                      <label>Position :</label>
-                      <select class="form-control" id="position" name="position" required>
-                        <option disabled selected>Select Your Position</option>
-                        <option>Project Manager</option>
-                        <option>General Worker</option>
-                        <option>Site Supervisor</option>
-                        <option>Admin Assistant</option>
-                        <option>Account Executive</option>
-                        <option>Site Engineer</option>
-                      </select>
-                    </div>
-                    <div class="form-group mt-3">
-                      <label>Full Name :</label>
-                      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                    </div>
-                    <div class="form-group mt-3">
-                      <label>Email :</label>
-                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group mt-3">
-                      <label>Phone :</label>
-                      <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
-                    </div>
-                    <div class="form-group mt-3">
-                      <label>Why do you want to apply ?</label>
-                      <textarea placeholder="Tell us more about your motivations" class="form-control" name="message" rows="4" required></textarea>
-                    </div>
-                    <div class="form-group mt-3">
-                      <label>Qualification :</label>
-                      <select class="form-control" id="qualification" name="qualification" required>
-                        <option disabled selected>Select Your Qualification</option>
-                        <option>Degree</option>
-                        <option>Diploma</option>
-                        <option>SKM (Sijil Kemahiran Malaysia)</option>
-                        <option>SPM (Sijil Pelajaran Malaysia)</option>
-                        <option>None of the above</option>
-                      </select>
-                    </div>
-                    <div class="form-group mt-3">
-                      <label>Experience :</label>
-                      <textarea placeholder="Tell us more about your experience" class="form-control" name="experience" rows="4" required></textarea>
-                    </div>
-                    <div class="form-group mt-3">
-                      <label>Upload Your Resume :</label>
-                      <input name="attachment" type="file" class="form-control" accept="application/pdf" id="file" required>
-                      <p style="font-size: 12px; color: red;">Format pdf file only.</p>
-                    </div>
-                    <div class="button text-center">
-                      <input type="hidden" name="_next" value="https://khurotulaini.github.io/ltfenergy/career.html">
-                      <input type="hidden" name="_captcha" value="false">
-                      <input type="hidden" name="_subject" value="New Job Application !">
-                      <input type="hidden" name="_template" value="table">
-                      <input type="hidden" name="form_type" value="job_application">
-                      <button type="submit">Submit Application</button>
-                    </div>
-                  </div>
+        <div class="formbold-main-wrapper">
+          <div class="formbold-form-wrapper">
+             <img src="your-image-here.jpg">
+            <form action="https://formsubmit.co/aini9900933850@gmail.com" method="POST" enctype="multipart/form-data">
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="firstname" class="formbold-form-label"> First Name </label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="Your first name"
+                    class="formbold-form-input"
+                  />
                 </div>
-              </form>
-            </div>
+        
+                <div>
+                  <label for="lastname" class="formbold-form-label"> Last Name </label>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Your last name"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+        
+              <div class="formbold-input-flex">
+                <div>
+                    <label for="email" class="formbold-form-label"> Email </label>
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    class="formbold-form-input"
+                    />
+                </div>
+        
+                <div>
+                    <label class="formbold-form-label">Gender</label>
+        
+                    <select class="formbold-form-input" name="occupation" id="occupation">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                    </select>
+                </div>
+              </div>
+        
+              <div class="formbold-mb-3 formbold-input-wrapp">
+                <label for="phone" class="formbold-form-label"> Phone </label>
+        
+                <div>
+                  <input
+                    type="text"
+                    name="areacode"
+                    id="areacode"
+                    placeholder="Area code"
+                    class="formbold-form-input formbold-w-45"
+                  />
+        
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone number"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+        
+              <div class="formbold-mb-3">
+                <label for="age" class="formbold-form-label"> Applying for Position: </label>
+                <input
+                  type="text"
+                  name="age"
+                  id="age"
+                  class="formbold-form-input"
+                />
+              </div>
+        
+              <div class="formbold-mb-3">
+                <label for="dob" class="formbold-form-label"> When can you start? </label>
+                <input type="date" name="dob" id="dob" class="formbold-form-input" />
+              </div>
+        
+              <div class="formbold-mb-3">
+                <label for="address" class="formbold-form-label"> Address </label>
+        
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Street address"
+                  class="formbold-form-input formbold-mb-3"
+                />
+                <input
+                  type="text"
+                  name="address2"
+                  id="address2"
+                  placeholder="Street address line 2"
+                  class="formbold-form-input"
+                />
+              </div>
+        
+              <div class="formbold-mb-3">
+                <label for="message" class="formbold-form-label">
+                  Cover Letter
+                </label>
+                <textarea
+                  rows="6"
+                  name="message"
+                  id="message"
+                  class="formbold-form-input"
+                ></textarea>
+              </div>
+        
+              <div class="formbold-form-file-flex">
+                <label for="upload" class="formbold-form-label">
+                  Upload Resume
+                </label>
+                <input
+                  type="file"
+                  name="upload"
+                  id="upload"
+                  class="formbold-form-file"
+                />
+              </div>
+        
+              <button class="formbold-btn">Apply Now</button>
+            </form>
           </div>
         </div>
       </div>
