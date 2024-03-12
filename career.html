@@ -86,67 +86,68 @@
         <div class="formbold-main-wrapper">
           <div class="formbold-form-wrapper">
             <form action="https://formsubmit.co/aini9900933850@gmail.com" method="POST" enctype="multipart/form-data">
-              <div class="formbold-input-flex">
-                <div>
-                  <label for="firstname" class="formbold-form-label"> First Name </label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    id="firstname"
-                    placeholder="Your first name"
-                    class="formbold-form-input"
-                  />
+              <div class="formbold-mb-3">
+                <label for="" class="formbold-form-label" style="font-size: 35px; text-align: center; color: #89c35c; font-weight: bold;">JOB APPLICATION</label>
+                <label for="" class="formbold-form-label" style="font-size: 15px; text-align: center;">Please fill out the following fields to submit your application</label>
                 </div>
-        
-                <div>
-                  <label for="lastname" class="formbold-form-label"> Last Name </label>
-                  <input
-                    type="text"
-                    name="lastname"
-                    id="lastname"
-                    placeholder="Your last name"
-                    class="formbold-form-input"
-                  />
+                <br>
+                <div class="formbold-mb-3">
+                  <label for="position" class="formbold-form-label">Position</label>
+      
+                  <select class="formbold-form-input" name="position" id="position" required>
+                  <option value="" disabled selected>Select your position</option>
+                  <option value="site-engineer">Site Engineer</option>
+                  <option value="admin-ass">Admin Assistant</option>
+                  <option value="acc-exec">Account Executive</option>
+                  <option value="project-manager">Project Manager</option>
+                  <option value="worker">General Worker</option>
+                  </select>
                 </div>
-              </div>
-        
-              <div class="formbold-input-flex">
-                <div>
-                    <label for="email" class="formbold-form-label"> Email </label>
+
+                <div class="formbold-mb-3">
+                  <div>
+                    <label for="fullname" class="formbold-form-label"> Full Name </label>
                     <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="example@email.com"
-                    class="formbold-form-input"
+                      type="text"
+                      name="fullname"
+                      id="fullname"
+                      placeholder="Your full name"
+                      class="formbold-form-input"
+                      required
                     />
+                  </div>
                 </div>
         
-                <div>
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="email" class="formbold-form-label"> Email </label>
+                    <input 
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="example@email.com"
+                      class="formbold-form-input"
+                      required
+                    />
+                  </div>
+        
+                  <div>
                     <label class="formbold-form-label">Gender</label>
         
-                    <select class="formbold-form-input" name="occupation" id="occupation">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="others">Others</option>
+                    <select class="formbold-form-input" name="gender" id="gender" required>
+                      <option value="" disabled selected>Select your gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
                     </select>
+                  </div>
                 </div>
-              </div>
         
-              <div class="formbold-mb-3 formbold-input-wrapp">
+              <div class="formbold-mb-3">
                 <label for="phone" class="formbold-form-label"> Phone </label>
         
                 <div>
                   <input
-                    type="text"
-                    name="areacode"
-                    id="areacode"
-                    placeholder="Area code"
-                    class="formbold-form-input formbold-w-45"
-                  />
-        
-                  <input
-                    type="text"
+                    type="tel"
                     name="phone"
                     id="phone"
                     placeholder="Phone number"
@@ -156,48 +157,40 @@
               </div>
         
               <div class="formbold-mb-3">
-                <label for="age" class="formbold-form-label"> Applying for Position: </label>
-                <input
-                  type="text"
-                  name="age"
-                  id="age"
-                  class="formbold-form-input"
-                />
+                <label for="qualification" class="formbold-form-label">Qualification</label>
+    
+                <select class="formbold-form-input" name="qualification" id="qualification">
+                <option value="" disabled selected>Select your qualification</option>
+                <option value="deg">Degree</option>
+                <option value="dip">Diploma</option>
+                <option value="skm">Sijil Kemahiran Malaysia (SKM)</option>
+                <option value="spm">Sijil Pelajaran Malaysia (SPM)</option>
+                <option value="none">None of the above</option>
+                </select>
               </div>
         
               <div class="formbold-mb-3">
-                <label for="dob" class="formbold-form-label"> When can you start? </label>
-                <input type="date" name="dob" id="dob" class="formbold-form-input" />
-              </div>
+                <label for="message" class="formbold-form-label"> Why do you wat to apply? </label>
         
-              <div class="formbold-mb-3">
-                <label for="address" class="formbold-form-label"> Address </label>
-        
-                <input
-                  type="text"
-                  name="address"
-                  id="address"
-                  placeholder="Street address"
-                  class="formbold-form-input formbold-mb-3"
-                />
-                <input
-                  type="text"
-                  name="address2"
-                  id="address2"
-                  placeholder="Street address line 2"
-                  class="formbold-form-input"
-                />
-              </div>
-        
-              <div class="formbold-mb-3">
-                <label for="message" class="formbold-form-label">
-                  Cover Letter
-                </label>
                 <textarea
-                  rows="6"
                   name="message"
                   id="message"
+                  placeholder="Tell us more about your motivations "
+                  class="formbold-form-input" 
+                  rows="4" 
+                  required>
+                </textarea>
+              </div>
+        
+              <div class="formbold-mb-3">
+                <label for="experience" class="formbold-form-label">Experience</label>
+                <textarea
+                  rows="4"
+                  name="experience"
+                  id="experience"
                   class="formbold-form-input"
+                  placeholder="Tell us more about your experience"
+                  required
                 ></textarea>
               </div>
         
@@ -210,8 +203,11 @@
                   name="upload"
                   id="upload"
                   class="formbold-form-file"
+                  accept="application/pdf"
+                  required
                 />
               </div>
+              <p style="font-size: 12px; color: red;">Format pdf file only.</p>
         
               <button type="submit" class="formbold-btn">Apply Now</button>
             </form>

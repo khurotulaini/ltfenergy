@@ -1794,7 +1794,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #3498db;
+  color: #89C35C;
 }
 
 .team .member .social i {
@@ -1831,6 +1831,10 @@ section {
   opacity: 1;
 }
 
+/*--------------------------------------------------------------
+# Form Career
+--------------------------------------------------------------*/
+
 .formbold-mb-3 {
   margin-bottom: 15px;
 }
@@ -1844,9 +1848,9 @@ section {
 
 .formbold-form-wrapper {
   margin: 0 auto;
-  max-width: 570px;
+  max-width: 800px;
   width: 100%;
-  background: white;
+  background: #292929;
   padding: 40px;
 }
 
@@ -1876,27 +1880,24 @@ section {
   background: #ffffff;
   font-weight: 500;
   font-size: 16px;
-  color: #536387;
+  color: black;
   outline: none;
   resize: none;
 }
-.formbold-form-input::placeholder,
-select.formbold-form-input,
-.formbold-form-input[type='date']::-webkit-datetime-edit-text,
-.formbold-form-input[type='date']::-webkit-datetime-edit-month-field,
-.formbold-form-input[type='date']::-webkit-datetime-edit-day-field,
-.formbold-form-input[type='date']::-webkit-datetime-edit-year-field {
-  color: rgba(83, 99, 135, 0.5);
+
+select.formbold-form-input::placeholder,
+option.formbold-form-input:focus {
+  color: black;
 }
 
 .formbold-form-input:focus {
-  border-color: #6a64f1;
+  border-color: #89C35C;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
 .formbold-form-label {
-  color: #07074D;
+  color: #ffffff;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   display: block;
   margin-bottom: 10px;
@@ -1913,7 +1914,7 @@ select.formbold-form-input,
 .formbold-form-file {
   font-size: 14px;
   line-height: 24px;
-  color: #536387;
+  color: white;
 }
 .formbold-form-file::-webkit-file-upload-button {
   display: none;
@@ -1930,7 +1931,7 @@ select.formbold-form-input,
   white-space: nowrap;
   -webkit-user-select: none;
   cursor: pointer;
-  color: #637381;
+  color: black;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -1945,8 +1946,8 @@ select.formbold-form-input,
   padding: 14px 25px;
   border: none;
   font-weight: 500;
-  background-color: #6a64f1;
-  color: white;
+  background-color: #89C35C;
+  color: black;
   cursor: pointer;
   margin-top: 25px;
 }
