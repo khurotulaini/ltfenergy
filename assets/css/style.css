@@ -1843,7 +1843,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px;
 }
 
 .formbold-form-wrapper {
@@ -1851,7 +1850,6 @@ section {
   max-width: 800px;
   width: 100%;
   background: #292929;
-  padding: 40px;
 }
 
 .formbold-img {
